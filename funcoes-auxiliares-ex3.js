@@ -6,7 +6,7 @@ function gets() {
   let salarioLiquido = 0;
   if (salarioBruto >= 0 && salarioBruto <= 1100) {
     salarioLiquido = salarioBruto - (salarioBruto * aliquotas[0]) + beneficios;
-  } else if (salarioBruto > 1000.01 && salarioBruto <= 2500) {
+  } else if (salarioBruto >= 1000.01 && salarioBruto <= 2500) {
     salarioLiquido = salarioBruto - (salarioBruto * aliquotas[1]) + beneficios;
   } else {
     salarioLiquido = salarioBruto - (salarioBruto * aliquotas[2]) + beneficios;
